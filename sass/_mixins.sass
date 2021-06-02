@@ -1,0 +1,30 @@
+// =========================== Media Query Manager ===========================
+// 0    - 480px:  Dispositivos extra small  (smartphones con display extra pequeño)
+// 480  - 576px:  Dispositivos small        (smartphones con display pequeño)
+// 576  - 768px:  Dispositivos medium       (smartphones con display común y tablets con display pequeño)
+// 768  - 992px:  Dispositivos large        (smartphones con display grande, tablets con display común y laptops con display pequeño)
+// 992  - 1024px: Dispositivos extra large  (tablets y laptops con display grande y pantallas desktop)
+
+$s-phone:   480px
+$phone:     576px
+$tablet:    768px
+$laptop:    992px
+$desktop:   1200px
+
+@mixin respond($breakpoint)
+    @if $breakpoint == s-phone
+        @media (min-width: $s-phone)
+            @content
+    @if $breakpoint == phone
+        @media (min-width: $phone)
+            @content
+    @if $breakpoint == tablet
+        @media (min-width: $tablet)
+            @content
+    @if $breakpoint == laptop
+        @media (min-width: $laptop)
+            @content
+    @if $breakpoint == desktop
+        @media (min-width: $desktop)
+            @content
+    

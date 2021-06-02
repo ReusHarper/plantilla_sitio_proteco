@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Athiti&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Athiti&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: white;
+}
+
+.btn-curvo {
+  height: 61px;
+  width: 154px;
+  border: none;
+  border-radius: 32px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+@media (min-width: 480px) {
+  .btn-curvo {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  .btn-curvo {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .btn-curvo {
+    font-size: 24px;
+  }
+}
+
+.btn-curvo .btn-blanco {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.btn-curvo .btn-blanco:hover {
+  color: #ffffff;
+  background-color: #E01656;
+}
+
+.btn-curvo .btn-amarillo {
+  background-color: #E01656;
+  color: #ffffff;
+}
+
+.btn-curvo .btn-amarillo:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+header {
+  height: 60px;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 78px;
+  padding-right: 78px;
+}
+
+header img {
+  max-height: 80px;
+  max-width: 80px;
+  margin-right: auto;
+}
+
+@media (min-width: 480px) {
+  header {
+    height: 80px;
+    background: red;
+  }
+}
+
+@media (min-width: 576px) {
+  header {
+    height: 110px;
+    background: orange;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    height: 140px;
+    background: yellow;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    height: 170px;
+    background: green;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    height: 200px;
+    background: blue;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 480px) {
+  a {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  a {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  a {
+    font-size: 24px;
+  }
+}
+
+nav ul {
+  list-style: none;
+  color: #000000;
+  font-family: 'Athiti', sans-serif;
+  font-weight: 500;
+}
+
+nav ul li {
+  margin-right: 30px;
+  display: inline-block;
+}
+
+nav ul li a {
+  color: #000000;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+}
+/*# sourceMappingURL=styles.css.map */

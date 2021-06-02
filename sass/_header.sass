@@ -1,0 +1,60 @@
+@import _variables
+@import _mixins
+@import _botones
+
+header
+    height: 60px
+    width:  auto
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    padding-left: $pad_items
+    padding-right: $pad_items
+    img
+        max-height: $h_icon
+        max-width:  $w_icon
+        margin-right: auto
+    @include respond(s-phone)
+        height: $h_sphone_header
+        background: red
+    @include respond(phone)
+        height: $h_phone_header
+        background: orange
+    @include respond(tablet)
+        height: $h_tablet_header
+        background: yellow
+    @include respond(laptop)
+        height: $h_laptop_header
+        background: green
+    @include respond(desktop)
+        height: $h_desktop_header
+        background: blue
+
+a
+    text-decoration: none
+    @include respond(s-phone)
+        font-size: $t_link_small
+    @include respond(laptop)
+        font-size: $t_link_medium
+    @include respond(desktop)
+        font-size: $t_link_large
+    
+
+nav
+    ul
+        list-style: none
+        color: $c_t2
+        font-family: 'Athiti', sans-serif
+        font-weight: 500
+        li
+            margin-right: $mar_items
+            display: inline-block
+            a
+                color: $c_t2
+                transition: all 0.3s ease 0s
+                &:hover
+                    color: $c_t1
+
+.logo
+    cursor: pointer
+    margin-right: auto

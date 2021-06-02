@@ -1,0 +1,33 @@
+@import _variables
+@import _mixins
+
+.btn-curvo
+    height: $h_bm  
+    width:  $w_bm
+    border: none
+    border-radius: $br_bm
+    cursor: pointer
+    display: flex
+    font-size: $t_btnPrincipal
+    align-items: center
+    justify-content: center
+    transition: all 0.3s ease 0s
+    @include respond(s-phone)
+        font-size: $t_link_small
+    @include respond(laptop)
+        font-size: $t_link_medium
+    @include respond(desktop)
+        font-size: $t_link_large 
+    .btn-blanco
+        background-color: $c_b1
+        color: $c_t2
+        &:hover
+            color: $c_t1
+            background-color: $c_b2
+    .btn-amarillo
+        background-color: $c_b2
+        color: $c_t1
+        &:hover
+            color: $c_t2
+            background-color: $c_b1
+        
